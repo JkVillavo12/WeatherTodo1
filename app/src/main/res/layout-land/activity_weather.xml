@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_coordinator"
+    style="@style/mm"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/shape_gradient"
+    tools:context=".ui.weather.WeatherActivity">
+
+    <RelativeLayout
+        style="@style/mm">
+
+        <ProgressBar
+            android:id="@+id/weather_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/weather_fabRefresh"
+            style="@style/ww"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_S"
+            android:onClick="refresh"
+            android:src="@drawable/baseline_refresh_black_24"
+            android:tint="@color/icons"/>
+
+        <TextView
+            android:id="@+id/weather_tvCity"
+            style="@style/mw"
+            android:layout_below="@id/weather_fabRefresh"
+            android:layout_marginTop="@dimen/margin_M"
+            android:gravity="center_horizontal"
+            android:text="@string/lorem_word5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@color/textLightPrimary"/>
+
+
+        <LinearLayout
+            style="@style/mw"
+            android:layout_below="@id/weather_tvCity"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                style="@style/ww"
+                android:layout_width="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/weather_tvValue"
+                    style="@style/ww"
+                    android:layout_centerInParent="true"
+                    android:text="@string/lorem_weather"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                    android:textColor="@color/textLightPrimary"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/mm"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/margin_M"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/weather_divider"
+                    style="@style/ww"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/divider"/>
+
+                <TextView
+                    android:id="@+id/weather_tvRain"
+                    style="@style/mw"
+                    android:layout_alignTop="@id/weather_divider"
+                    android:layout_marginLeft="@dimen/margin_M"
+                    android:layout_marginRight="@dimen/margin_M"
+                    android:layout_toRightOf="@id/weather_divider"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_rain"
+                    android:textColor="@color/textLightSecondary"/>
+
+                <TextView
+                    android:id="@+id/weather_tvRainValue"
+                    style="@style/mw"
+                    android:layout_below="@id/weather_tvRain"
+                    android:layout_marginLeft="@dimen/margin_M"
+                    android:layout_marginRight="@dimen/margin_M"
+                    android:layout_marginTop="@dimen/margin_S"
+                    android:layout_toRightOf="@id/weather_divider"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lorem_word1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/textLightPrimary"/>
+
+                <TextView
+                    android:id="@+id/weather_tvHumidity"
+                    style="@style/mw"
+                    android:layout_alignTop="@id/weather_divider"
+                    android:layout_marginLeft="@dimen/margin_M"
+                    android:layout_marginRight="@dimen/margin_M"
+                    android:layout_toLeftOf="@id/weather_divider"
+                    android:gravity="center_horizontal"
+                    android:text="@string/text_humidity"
+                    android:textColor="@color/textLightSecondary"/>
+
+                <TextView
+                    android:id="@+id/weather_tvHumidityValue"
+                    style="@style/mw"
+                    android:layout_below="@id/weather_tvRain"
+                    android:layout_marginLeft="@dimen/margin_M"
+                    android:layout_marginRight="@dimen/margin_M"
+                    android:layout_marginTop="@dimen/margin_S"
+                    android:layout_toLeftOf="@id/weather_divider"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lorem_word1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/textLightPrimary"/>
+
+                <TextView
+                    android:id="@+id/weather_tvSummary"
+                    style="@style/ww"
+                    android:layout_below="@id/weather_tvHumidityValue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_M"
+                    android:text="@string/lorem_word1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/textLightPrimary"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/ww"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/margin_XS"
+            android:layout_marginRight="@dimen/margin_XS"
+            android:gravity="center_horizontal"
+            android:text="@string/text_poweredBy"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@color/textLightPrimary"
+            android:transitionName="@string/transition_jk"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

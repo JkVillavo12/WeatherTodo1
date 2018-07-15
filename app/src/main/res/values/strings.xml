@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">Weather</string>
+    <string name="title_activity_weather">Clima</string>
+
+    <string name="transition_jk">transitionJk</string>
+
+    <string name="common_configure">Configurar</string>
+    <string name="common_accept">Aceptar</string>
+
+    <string name="lorem_word5">Lorem ipsum dolor sit amet</string>
+    <string name="lorem_word1">Lorem</string>
+    <string name="lorem_weather">90º</string>
+
+    <string name="text_poweredBy">Powered by \nJkVillavo12Col</string>
+    <string name="text_humidity">Humedad</string>
+    <string name="text_rain">Lluvia</string>
+    <string name="text_percent">%1$s%%</string>
+    <string name="text_degress">%1$sº</string>
+    <string name="text_error">Hubo un error consultando la información</string>
+
+    <string name="msg_loading">Consultando información...</string>
+    <string name="msg_internetMandatory">Es necesaria una conexión a internet.</string>
+    <string name="msg_permissions">Debes habilitarnos unos permisos.</string>
+    <string name="msg_permissionsSettings">Debes habilitarnos unos permisos.\nVe a configuración y habilitalos.</string>
+    <string name="msg_notNetwork">No se tiene conexión a Internet.</string>
+    <string name="msg_notInfo">Sin información.</string>
+
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_M">32dp</dimen>
+    <dimen name="margin_S">16dp</dimen>
+    <dimen name="margin_XS">8dp</dimen>
+
+    <dimen name="padding_Xl">32dp</dimen>
+    <dimen name="padding_l">16dp</dimen>
+    <dimen name="padding_M">8dp</dimen>
+    <dimen name="padding_S">4dp</dimen>
+
+</resources>
